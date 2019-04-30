@@ -1,0 +1,56 @@
+*notewrite.txt*     NeoVim      Last change: 2019-04-29
+
+NoteWrite                                                          *notewrite*
+==============================================================================
+INTRODUCTION                                          *notewrite-introduction*
+
+This plug-in was created to help automatically save the file using the first
+line from the file as the file name. By default the files are saved to
+~/notes/.
+This plug-in is helpful if you use NeoVim as a sticky notes application for
+the GNU/Linux desktop.
+
+
+==============================================================================
+USAGE                                                        *notewrite-usage*
+
+This plug-in adds 2 commands:
+
+To automatically save the content of the file in the ~/notes/ directory, using
+the first line as the name of the file:
+
+>
+        :NoteWrite
+<
+
+To exit the editor trying to save the file first:
+
+>
+        :NoteExcit
+<
+
+
+==============================================================================
+CONFIGURATION                                        *notewrite-configuration*
+
+There is one variable to configure the directory to save the notes:
+
+`set note-save-directory=/home/camilo/mynotes`
+            To save the notes to a different directory.
+
+
+You can map your favorite keystrokes sequence to these commands:
+
+>
+nnoremap <Leader>nw :NoteWrite<CR>
+nnoremap <Leader>nx :NoteExit<CR>
+<
+
+
+==============================================================================
+ATTRIBUTION                                            *notewrite-attribution*
+
+By Camilo Torres (https://github.com/camilotorresf/neovim-note-save)
+
+
+nvim:tw=78:sw=8:ts=8:ft=help:norl:noet
