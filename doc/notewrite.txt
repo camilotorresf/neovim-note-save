@@ -42,8 +42,8 @@ There is one variable to configure the directory to save the notes:
 You can map your favorite keystrokes sequence to these commands:
 
 >
-nnoremap <Leader>nw :NoteWrite<CR>
-nnoremap <Leader>nx :NoteExit<CR>
+        nnoremap <Leader>nw :NoteWrite<CR>
+        nnoremap <Leader>nx :NoteExit<CR>
 <
 
 
